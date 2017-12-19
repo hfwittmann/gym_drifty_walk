@@ -15,7 +15,7 @@ class DriftyWalkEnv(gym.Env):
         self.action_space = spaces.Box(-1, 1, shape = (1,))
         
         # the walk starts at 0
-        self.x = 0
+        self.state = 0
         return None
 
     def _step(self, action):
